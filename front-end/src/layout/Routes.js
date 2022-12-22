@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import Dashboard from "../dashboard/Dashboard";
 import NotFound from "./NotFound";
-import { today } from "../utils/date-time";
 import ReservationForm from "../ReservationForm/ReservationForm";
 import TableForm from "../TableForm/TableForm";
 import OccupyTable from "../TableForm/OccupyTable";
 import Search from "../search/search";
-import ReservationEdit from "../ReservationEdit/ReservationEdit";
 
 /**
  * Defines all the routes for the application.

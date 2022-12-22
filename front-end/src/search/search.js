@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { listReservations } from "../utils/api";
-import useQuery from "../utils/useQuery";
 import ReservationList from "../ReservationList/ReservationList";
 
 
@@ -12,7 +11,7 @@ function Search() {
 
     const [mobile, setMobile] = useState("")
     const [reservations, setReservations] = useState([])
-    const [reservationsError, setReservationsError] = useState(null);
+    const [setReservationsError] = useState(null);
     const [noReservations, setNoReservations] = useState(false);
 
 

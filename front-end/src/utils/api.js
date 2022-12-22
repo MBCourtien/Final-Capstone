@@ -133,8 +133,7 @@ export async function cancelReservation(id, signal) {
 
 export async function updatedReservation(id, params, signal) {
   const url = new URL(`${API_BASE_URL}/reservations/${id}`)
-  const format = params.reservation_time.split(":")
-  const splice = format.splice(2,1)
+  const format = params.reservation_time.split(":");
   const time = format.join(":")
 
 

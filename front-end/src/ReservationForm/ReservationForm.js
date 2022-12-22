@@ -7,10 +7,6 @@ import ErrorAlert from "../layout/ErrorAlert";
 
 function ReservationForm() {
 
-    /*
-    Questions:
-    Need to change onClick in cancel to push to a specific page, maybe dashboard?
-    */
     let controller = new AbortController()
     let { reservation_id } = useParams()
 
