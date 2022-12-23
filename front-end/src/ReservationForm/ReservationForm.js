@@ -37,7 +37,7 @@ function ReservationForm() {
                 const current = await readReservation(id, controller.signal)
                 setFormData({...current})
             } catch(error) {setReadError(error)};
-        };
+        }
 
         if (reservation_id){
             grabRes(reservation_id)
