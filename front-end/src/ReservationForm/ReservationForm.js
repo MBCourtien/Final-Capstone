@@ -30,6 +30,9 @@ function ReservationForm() {
 
 
     useEffect(() => {
+
+        let controller = new AbortController()
+        let { reservation_id } = useParams()
         async function grabRes(id)  {
             try {
                 const current = await readReservation(id, controller.signal)
