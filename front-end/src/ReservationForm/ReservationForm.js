@@ -36,7 +36,7 @@ function ReservationForm() {
             try {
                 const current = await readReservation(id, controller.signal)
                 setFormData({...current})
-            } catch(error) {setReadError(error)};
+            } catch(error) {setReadError(error)}
         }
 
         if (reservation_id){
@@ -133,22 +133,22 @@ function ReservationForm() {
             <ErrorAlert error={readError} />
             <form onSubmit={(event) => submitHandler(event)}>
 
-                <label for="first_name">First Name:</label>
+                <label htmlFor="first_name">First Name:</label>
                 <input name="first_name" value={formData.first_name} onChange={handleChange} required />
 
-                <label for="last_name">Last Name:</label>
+                <label htmlFor="last_name">Last Name:</label>
                 <input name="last_name" value={formData.last_name} onChange={handleChange} required />
 
-                <label for="mobile_number">Mobile Number:</label>
+                <label htmlFor="mobile_number">Mobile Number:</label>
                 <input name="mobile_number" value={formData.mobile_number} onChange={handleChange} required />
 
-                <label for="reservation_date">Reservation Date:</label>
+                <label htmlFor="reservation_date">Reservation Date:</label>
                 <input name="reservation_date" value={formData.reservation_date} onChange={handleChange} required type="date" />
 
-                <label for="reservation_time">Reservation Time:</label>
+                <label htmlFor="reservation_time">Reservation Time:</label>
                 <input name="reservation_time" value={formData.reservation_time} onChange={handleChange} required type="time" />
 
-                <label for="people">People:</label>
+                <label htmlFor="people">People:</label>
                 <input name="people" value={formData.people} onChange={handleChange} required />
 
                 <button type="submit">submit</button>

@@ -53,7 +53,7 @@ function OccupyTable() {
         <div>
 
             <form onSubmit={(event) => submitHandler(event)}>
-                <label for="table_id">Open Tables:</label>
+                <label htmlFor={"table_id"}>Open Tables:</label>
                 <ErrorAlert error={tableError} />
                 <select name="table_id" id="table_id" onChange={handleChange} value={formData.table_id}>
                     <option value="">--No Table Selected--</option>
